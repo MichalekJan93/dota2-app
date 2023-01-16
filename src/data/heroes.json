@@ -1,0 +1,204 @@
+[
+    {
+        "name": "Abaddon",
+        "img": "./img/abaddon.png",
+        "attr": "strengh"
+    },
+    {
+        "name": "Alchemist",
+        "img": "./img/alchemist.png",
+        "attr": "strengh"
+    },
+    {
+        "name": "Ancient Apparation",
+        "img": "./img/ancient_apparition.png",
+        "attr": "inteligence"
+    },
+    {
+        "name": "Anti-mage",
+        "img": "./img/antimage.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Arc-warden",
+        "img": "./img/arc_warden.png"
+    },
+    {
+        "name": "Axe",
+        "img": "./img/axe.png"
+    },
+    {
+        "name": "Bane",
+        "img": "./img/alchemist.png"
+    },
+    {
+        "name": "Batrider",
+        "img": "./img/batrider.png"
+    },
+    {
+        "name": "Beastmaster",
+        "img": "./img/beastmaster.png"
+    },
+    {
+        "name": "Bloodseeker",
+        "img": "./img/bloodseeker.png"
+    },
+    {
+        "name": "Bounty Hunter",
+        "img": "./img/bounty_hunter.png"
+    },
+    {
+        "name": "Breawmaster",
+        "img": "./img/brewmaster.png"
+    },
+    {
+        "name": "Bristleback",
+        "img": "./img/bristleback.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Broodmather",
+        "img": "./img/broodmother.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Centaur",
+        "img": "./img/centaur.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Chaos Knight",
+        "img": "./img/chaos_knight.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Chen",
+        "img": "./img/chen.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Clinkz",
+        "img": "./img/clinkz.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Clokwerk",
+        "img": "./img/rattletrap.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Crystal Maiden",
+        "img": "./img/crystal_maiden.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Dark Seer",
+        "img": "./img/dark_seer.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Dark Willow",
+        "img": "./img/dark_willow.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Dawnbreaker",
+        "img": "./img/dawnbreaker.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Dazzle",
+        "img": "./img/dazzle.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Death Prophet",
+        "img": "./img/death_prophet.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Disruptor",
+        "img": "./img/disruptor.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Doom",
+        "img": "./img/doom_bringer.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Dragon Knight",
+        "img": "./img/dragon_knight.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Drow Ranger",
+        "img": "./img/drow_ranger.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Earth Spirit",
+        "img": "./img/earth_spirit.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Earthshaker",
+        "img": "./img/earthshaker.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Elder Titan",
+        "img": "./img/elder_titan.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Ember Spirit",
+        "img": "./img/ember_spirit.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Enchantress",
+        "img": "./img/enchantress.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Enigma",
+        "img": "./img/enigma.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Faceless Void",
+        "img": "./img/faceless_void.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Grimstroke",
+        "img": "./img/grimstroke.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Gyrocopter",
+        "img": "./img/gyrocopter.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Hoodwing",
+        "img": "./img/hoodwink.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Huskar",
+        "img": "./img/huskar.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Invoker",
+        "img": "./img/invoker.png",
+        "attr": "carry"
+    },
+    {
+        "name": "Io",
+        "img": "./img/wisp.png",
+        "attr": "carry"
+    }
+]
