@@ -17,7 +17,9 @@ mongoose
 const heroes = new mongoose.Schema({
     name: String,
     img: String,
-    attr: String
+    attr: String,
+    video: String,
+    imgPerson: String
 })
 
 const validateHero = (hero) => {
@@ -38,12 +40,16 @@ app.get('/api/hero', (req, res) => {
 });
 
 app.post('/api/hero', (req, res) => {
-    const { error } = validateHero(req.body);
+    /* const { error } = validateHero(req.body);
     if (error) {
         res.status(400).send(error.details[0].message);
-    }else {
+    }else { */
         Hero.create(req.body)
             .then(result => { res.json(result)})
             .catch(err => res.send("Nepodarilo se pridat hrdinu"));
-    }
+    /* } */
+})
+
+app.put('/api/hero/:id', (req, res) => {
+    console.log(req.parse.id);
 })
