@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #171624;
+    /* 
+#171624  
+*/
+}
+
+:root{
+    --background-color: #272539 ;
+    --border-radius: 10px;
+    --button-color: #fe5821;
+    --font-color: rgb(196, 196, 196);
+}
+
+.box{
+    padding: 0.5rem;
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.menu{
+    width: 150px;
+    height: 98vh;
+    max-height: 1200px;
+    padding: 1rem 0;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+
+.user img{
+    width: 25%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.menu-list a{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-size: 23px;
+    background-repeat: no-repeat;
+}
+
+.menu-list a:nth-child(1){
+    background-image: url('./public/img/house-black-silhouette-without-door.png');
+}
+
+.menu-list a:nth-child(1).active{
+    background-image: url('./public/img/house-black-silhouette-without-door\ \(1\).png');
+}
+
+.menu-list a:nth-child(2){
+    background-image: url('./public/img/user.png');
+}
+
+.menu-list a:nth-child(2).active{
+    background-image: url('./public/img/user\ \(1\).png');
+}
+
+.content{
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.left-content-box{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.game-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 1rem;
+    gap: 1rem;
+    background-image:
+    url('https://wallpaperaccess.com/full/671214.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 80%;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+
+.game-header h1{
+    color: white;
+}
+
+.game-header button {
+    background-color: var(--button-color);
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    padding: 5px 10px;
+    width: 100px;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    background-image: url('./public/img/play-button.png');
+    background-repeat: no-repeat;
+    background-position-x: 80px;
+    background-position-y: 7px;
+    background-size: 14px;
+    padding-right: 25px;
+}
+
+.game-header button:hover{
+    -webkit-box-shadow: 0px 0px 5px 0px var(--button-color);
+    -moz-box-shadow: 0px 0px 5px 0px var(--button-color);
+    box-shadow: 0px 0px 5px 0px var(--button-color);
+}
+
+.heroes{
+    color: var(--font-color);
+    width: 80%;
+    padding: 1rem;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+
+.heroes-divided{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.heroes-divided div{
+    width: 33%;
+    background-color: var(--background-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heroes-divided div p{
+    font-size: 2.5rem;
+    color: var(--button-color);
+    position: absolute;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+.heroes-divided div p:hover{
+    text-shadow: 1px 1px 2px black;
+}
+
+.heroes-divided div img{
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+.heroes-divided div:nth-child(1) img{
+    width: 250px;
+}
+
+.heroes-divided div:nth-child(2) img{
+    width: 300px;
+}
