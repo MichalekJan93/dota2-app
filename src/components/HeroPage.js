@@ -1,5 +1,5 @@
 
-const HeroPage = () => {
+const HeroPage = (props) => {
     return(
         <div></div>
     )

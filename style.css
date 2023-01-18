@@ -29,7 +29,6 @@ body{
 .menu{
     width: 150px;
     height: 98vh;
-    max-height: 1200px;
     padding: 1rem 0;
     background-color: var(--background-color);
     display: flex;
@@ -87,12 +86,15 @@ body{
 .content{
     width: 100%;
     padding: 0 1rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .left-content-box{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    flex: 1;
 }
 
 .game-header{
@@ -106,7 +108,6 @@ body{
     background-size: cover;
     background-position: center center;
     height: 300px;
-    width: 80%;
     border-radius: var(--border-radius);
     -webkit-border-radius: var(--border-radius);
     -moz-border-radius: var(--border-radius);
@@ -147,7 +148,6 @@ body{
 
 .heroes{
     color: var(--font-color);
-    width: 80%;
     padding: 1rem;
     background-color: var(--background-color);
     border-radius: var(--border-radius);
@@ -157,42 +157,162 @@ body{
     -o-border-radius: var(--border-radius);
 }
 
-.heroes-divided{
+.heroes-divideds{
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
 }
 
-.heroes-divided div{
+.heroes-divideds .heroes-divided{
     width: 33%;
     background-color: var(--background-color);
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.heroes-divided div p{
-    font-size: 2.5rem;
-    color: var(--button-color);
-    position: absolute;
-    bottom: 30px;
     cursor: pointer;
 }
 
-.heroes-divided div p:hover{
-    text-shadow: 1px 1px 2px black;
+.heroes-attr{
+    height: 100%;
+}
+
+.heroes-attr:hover img{
+    margin-top: -20px;
+}
+
+.heroes-divideds .heroes-divided .heroes-attr{
+    position: relative;
+}
+
+.heroes-divideds .heroes-divided .heroes-attr p{
+    font-size: clamp(1rem, 2vw, 2rem);
+    color: white;
+}
+
+.heroes-divided-paragraph{
+    background-color: #17162498;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .heroes-divided div img{
-    width: 250px;
+    width: 90%;
     display: block;
     margin: 0 auto;
-}
-.heroes-divided div:nth-child(1) img{
-    width: 250px;
+    transition: all 600ms ease;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
 }
 
-.heroes-divided div:nth-child(2) img{
-    width: 300px;
+.heroes-divided:nth-child(2) img{
+    width: 121%;
 }
+
+.heroes-divided:nth-child(3) img{
+    width: 84%;
+}
+
+.heroes-icons{
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(225px, 10px));
+	gap: 1em;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+.heroes-icons .container-hero{
+    max-width: 225px;
+    height: 100px;
+    background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/abaddon.png');
+    background-size: cover;
+    background-position: center center;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+
+.heroes-icons .container-hero:hover{
+    scale: 1.1;
+}
+
+.right-content-box{
+    width: 150px;
+    height: 98vh;
+    flex: 0.2;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    display: flex;
+    padding: 1rem;
+}
+
+.blog-posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.blog-posts h2{
+    text-align: left !important;
+    width: 100%;
+    color: var(--font-color);
+}
+
+.blog-posts .blog-post{
+    position: relative;
+    background-image: url('https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/clans/3703047/86445d21c2408e8727140903c7f0bdd28ccad42c.png');
+    background-size: cover;
+    background-position: center center;
+    height: 150px;
+    width: 100%;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 300ms ease-in;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+}
+
+.blog-posts .blog-post:hover{
+    scale: 1.1;
+}
+
+.blog-posts .blog-post h3{
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: rgba(23, 22, 36, 0.596);
+}
+

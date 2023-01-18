@@ -1,6 +1,8 @@
+import Menu from "./Menu";
+import Content from "./Content";
 
 const MainPage = (props) => {
-    if(props.data !== undefined){
+    /* if(props.data !== undefined){
         return(
             <div>
                  {
@@ -10,10 +12,13 @@ const MainPage = (props) => {
             }
             </div>
         )
-    }
+    } */
     
     return(
-        <p>Loading ...</p>
+        <>
+            <Menu />
+            <Content />
+        </>
     )
 }
 

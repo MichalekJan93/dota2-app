@@ -20,7 +20,6 @@ const App = () => {
   
   return (
     <div className="App">
-      <p>Hello</p>
       <MainPage data={heroData}/>
     </div>
   );
