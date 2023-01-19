@@ -22,6 +22,11 @@ const heroes = new mongoose.Schema({
     imgPerson: String
 })
 
+const news = new mongoose.Schema({
+    title: String,
+    img: String
+})
+
 const validateHero = (hero) => {
     const schema = Joi.object({
         name: Joi.string().required(),
@@ -33,10 +38,16 @@ const validateHero = (hero) => {
 }
 
 const Hero = mongoose.model("heroes", heroes);
+const News = mongoose.model("news", news)
 
 app.get('/api/hero', (req, res) => {
     Hero.find()
         .then(heroes => {res.json(heroes)})
+});
+
+app.get('/api/news', (req, res) => {
+    News.find()
+        .then(news => {res.json(news)})
 });
 
 app.post('/api/hero', (req, res) => {

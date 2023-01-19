@@ -1,6 +1,6 @@
 import Routes from "./routes";
 import React, { useState, useEffect } from "react";
-import { GetHeroes } from "./server/getData";
+import { GetData} from "./server/getData";
 
 export const MyContext = React.createContext();
 
@@ -12,7 +12,7 @@ const App = () => {
     const url = "http://localhost:5000/api/hero";
     const fetchData = async () => {
       try{
-        const data = await GetHeroes(url);
+        const data = await GetData(url);
         setHeroData(data);
       }catch(error){
         console.log(error)

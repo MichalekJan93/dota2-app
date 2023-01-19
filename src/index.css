@@ -170,6 +170,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+    height: 300px;
 }
 
 .heroes-attr{
@@ -226,15 +227,15 @@ body{
 
 .heroes-icons{
     display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(225px, 10px));
+	grid-template-columns: repeat(auto-fit, minmax(185px, 10px));
 	gap: 1em;
     margin-top: 50px;
     justify-content: space-around;
 }
 
 .heroes-icons .container-hero{
-    max-width: 225px;
-    height: 100px;
+    max-width: 185px;
+    height: 90px;
     background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/abaddon.png');
     background-size: cover;
     background-position: center center;
