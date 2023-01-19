@@ -1,8 +1,8 @@
 import Routes from "./routes";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { GetHeroes } from "./server/getData";
-import MainPage from "./components/MainPage";
 
+export const MyContext = React.createContext();
 
 const App = () => {
 
@@ -11,18 +11,23 @@ const App = () => {
   useEffect( () => {
     const url = "http://localhost:5000/api/hero";
     const fetchData = async () => {
-      const data = await GetHeroes(url);
-      setHeroData(data);
+      try{
+        const data = await GetHeroes(url);
+        setHeroData(data);
+      }catch(error){
+        console.log(error)
+      }
     }
-
     fetchData();
   }, []);
-  
-  return (
-    <div className="App">
-      <MainPage data={heroData}/>
-    </div>
-  );
+
+    return (
+      <MyContext.Provider value = {heroData}>
+        <>
+          <Routes />
+        </>
+      </MyContext.Provider>
+    );
 }
 
 export default App;

@@ -1,7 +1,7 @@
 import Menu from "./Menu";
 import Content from "./Content";
 
-const MainPage = (props) => {
+const MainPage = () => {
     /* if(props.data !== undefined){
         return(
             <div>
@@ -13,7 +13,7 @@ const MainPage = (props) => {
             </div>
         )
     } */
-    
+
     return(
         <>
             <Menu />

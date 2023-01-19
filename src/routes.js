@@ -4,6 +4,7 @@ import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import MainPage from './components/MainPage';
 import HeroPage from './components/HeroPage';
 
+
 const Router = () => (
     <BrowserRouter>
         <Routes>
