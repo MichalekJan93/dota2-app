@@ -97,6 +97,10 @@ body{
     flex: 1;
 }
 
+.hero{
+    flex-direction: row !important;
+}
+
 .game-header{
     display: flex;
     flex-direction: column;

@@ -11,6 +11,10 @@ const Heroes = () => {
         setHeroData(getData);
     }, [getData]);
 
+    const openHeroStats = (id) => {
+        window.location.href = `/hero/${id}`;
+    }
+
     return  (
         <div className="heroes">
             <h2 className="heroes-title">Heroes</h2>
@@ -40,7 +44,7 @@ const Heroes = () => {
                     </div>
                 </div>
             </div>
-            {heroData && <HeroesIcons data={heroData} />}
+            {heroData && <HeroesIcons data={heroData} fn={openHeroStats}/>}
         </div>
     )
 }

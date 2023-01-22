@@ -97,6 +97,50 @@ body{
     flex: 1;
 }
 
+.hero{
+    flex-direction: row !important;
+    position: relative;
+}
+
+.hero-stats{
+    color: var(--font-color);
+    font-size: 3rem;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.4;
+    gap: 10px;
+}
+
+.hero-stats .hero-attr{
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+
+.hero-stats .carry{
+    background-image: url('../public/img/hero_agility.png');
+
+}
+
+.hero-stats .intelligence{
+    background-image: url('../public/img/hero_intelligence.png');
+}
+
+.hero-stats .strengh{
+    background-image: url('../public/img/hero_strength.png');
+}
+
+.hero-video video{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 55%;
+    max-width: 600px;
+}
+
 .game-header{
     display: flex;
     flex-direction: column;
