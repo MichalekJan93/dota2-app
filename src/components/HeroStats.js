@@ -18,7 +18,6 @@ const HeroStats = ({heroid}) => {
         }
     },[getData]);
 
-    console.log(hero)
 
     if(hero){
         const attrClassName = `hero-attr ${hero[0].attr}`;

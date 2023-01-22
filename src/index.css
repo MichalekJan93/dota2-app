@@ -104,7 +104,8 @@ body{
 
 .hero-stats{
     color: var(--font-color);
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
     height: 200px;
     display: flex;
     justify-content: center;
